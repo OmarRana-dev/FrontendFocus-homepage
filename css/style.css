@@ -35,14 +35,12 @@ header {
 }
 
 .hero-section {
-  background-color: aqua;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* overflow-x: hidden; */
   background: linear-gradient(
     to right,
     #344c64 0%,
@@ -75,6 +73,7 @@ header {
   font-family: "Reddit Mono", monospace;
 }
 .hero-text-paragraph {
+  max-width: 20rem;
   font-size: 1rem;
   font-weight: 300;
   color: #dad9d9;
@@ -109,7 +108,7 @@ header {
   align-items: center;
   gap: 0.8rem 0;
   margin: 2rem 0;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   text-align: center;
 }
 
@@ -132,7 +131,7 @@ header {
   flex-direction: column;
   text-align: center;
   row-gap: 2rem;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 
 .skills-container > h2 {
@@ -164,10 +163,15 @@ header {
   display: flex;
   flex-direction: column;
   gap: 2rem 0;
+  padding: 0 1rem;
 }
 
 .portfolio-text > p {
   color: #3b3b3bfb;
+}
+
+.portfolio-project-imgs {
+  padding: 0 2rem;
 }
 
 /* work experience section */
@@ -188,11 +192,12 @@ header {
   border-top: 1px solid #dad9d9;
   padding-top: 4rem;
   border-bottom: 4px solid #ff4f5a;
-  /* background-color: cadetblue; */
 }
 
 .work-experience-boxs-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
   position: relative;
@@ -203,7 +208,7 @@ header {
     rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
     rgba(0, 0, 0, 0.07) 0px 8px 16px;
   padding: 2rem;
-
+  max-width: 250px;
   text-align: start;
   background-color: #fff;
 }
@@ -246,7 +251,6 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 3rem 0;
-
   padding: 6rem 0 2rem 0;
   text-align: center;
   background-color: #344c64;
@@ -258,19 +262,16 @@ footer {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
-
   color: #dad9d9;
 }
 
 .footer-container {
-  /* background-color: aquamarine; */
   border-top: 1px solid #dad9d9;
-
   max-width: 1000px;
   width: 100%;
-
   display: flex;
   flex-direction: column;
+  padding: 0 .3rem;
 }
 
 .social-links-section {
@@ -295,6 +296,7 @@ footer {
   gap: 1rem;
 }
 
+/* button style */
 button {
   font-size: 1rem;
   font-weight: 300;
