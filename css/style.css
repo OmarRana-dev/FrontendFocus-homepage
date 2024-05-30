@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+object {
+  width: 40px;
+  height: 40px;
+}
+
+.portfolio-project-imgs > img {
+  width: 250px;
+  height: 250px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header {
+  padding: 15px 25px;
+  position: absolute;
+}
+
+.hero-section {
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* overflow-x: hidden; */
+  background: linear-gradient(
+    to right,
+    #344c64 0%,
+    #344c64 50%,
+    #028391 50%,
+    #028391 100%
+  );
+}
+
+.hero-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.hero-text {
+  height: 100%;
+  width: 50%;
+  padding: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hero-text > p:nth-child(1) {
+  font-family: "Reddit Mono", monospace;
+  font-size: 1.4rem;
+}
+.hero-text > h1 {
+  font-family: "Reddit Mono", monospace;
+}
+.hero-text-paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dad9d9;
+}
+
+.hero-image {
+  width: 50%;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image > img {
+  max-width: 100%;
+}
+
+.hero-text > button {
+  position: absolute;
+}
+
+/* About Sction */
+.About-section {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem 0;
+  margin: 2rem 0;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.about-text > h2 {
+  font-size: 2rem;
+}
+
+.about-text > p {
+  color: #3b3b3bfb;
+}
+
+/* Skills Section */
+.skills-section {
+  background-color: #344c64;
+  color: #fff;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+  padding: 5rem 0;
+}
+
+.skills-container > h2 {
+  font-size: 2rem;
+}
+
+.skills-container > ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem 3rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Work Section */
+.portfolio-section {
+  padding: 6rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem 0;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.portfolio-text {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 0;
+}
+
+.portfolio-text > p {
+  color: #3b3b3bfb;
+}
+
+/* work experience section */
+.work-experience-section {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+}
+
+.work-experience-contaienr {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem 0;
+  text-align: center;
+  max-width: 1000px;
+  border-top: 1px solid #dad9d9;
+  padding-top: 4rem;
+  border-bottom: 4px solid #ff4f5a;
+  /* background-color: cadetblue; */
+}
+
+.work-experience-boxs-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.work-experience-box {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px;
+  padding: 2rem;
+
+  text-align: start;
+  background-color: #fff;
+}
+
+.work-experience-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-experience-text > h4 {
+  font-weight: 600;
+}
+
+.work-experience-text > p {
+  line-height: 1.3rem;
+  color: #3b3b3bfb;
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+
+.work-experience-text-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.background-of-work-experience-box-section {
+  background-color: #344c64;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;  
+
+}
+
+/* hire me section */
+.hireMe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem 0;
+
+  padding: 6rem 0 2rem 0;
+  text-align: center;
+  background-color: #344c64;
+}
+
+/* footer section */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color:#344c64
+}
+
+.footer-container {
+  max-width: 1000px;
+  border-top: 1px solid #dad9d9;
+}
+
+/* .social-media-section {
+} */
+
+.social-media-section > ul {
+  display: flex;
+
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #ff4f5a;
+  border: none;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-top: 1rem;
+  transition: all ease-in 200ms;
+}
+
+button:hover {
+  color: #ff4f5a;
+  border-color: #ff4f5a;
+  background-color: transparent;
+}
