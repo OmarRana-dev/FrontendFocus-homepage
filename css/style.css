@@ -10,7 +10,6 @@
 }
 
 object {
-  /* background-color: #ff4f5a; */
   width: 40px;
   height: 40px;
 }
@@ -339,6 +338,7 @@ button {
   /* transition: all ease-in 200ms; */
 }
 
+/* button:hover, */
 button:active {
   color: #ff4f5a;
   border-color: #ff4f5a;
