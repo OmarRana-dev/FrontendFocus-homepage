@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #344c64;
+  --secondary-color: #028391;
+  --tertiary-color: #7691ad;
+  --primary-font-color: #fff;
+  --secondary-font-color: #dad9d9;
+  --tertiary-font-color: #3b3b3bfb;
+  --primary-btn-color: #ff4f5a;
+}
+
 @media screen and (max-width: 979px) {
   .hero-section {
     height: 70vh;
@@ -11,7 +21,7 @@
 @media screen and (max-width: 767px) {
   header {
     position: static;
-    background-color: #344c64;
+    background-color: var(--primary-color);
   }
   .hero-section {
     height: auto;
@@ -24,7 +34,7 @@
   }
 
   .hero-text {
-    background-color: #344c64;
+    background-color: var(--primary-color);
     height: 50%;
     width: 100%;
   }
@@ -38,7 +48,7 @@
   }
 
   .hero-image {
-    background-color: #028391;
+    background-color: var(--secondary-color);
     height: 50%;
     width: 100%;
   }
@@ -87,7 +97,7 @@
   }
 
   .footer-container {
-    border-top: 1px solid #7691ad;
+    border-top: 1px solid var(--tertiary-color);
     padding-top: 1rem;
   }
 }
