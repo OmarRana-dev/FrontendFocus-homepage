@@ -53,17 +53,41 @@
 
   .work-experience-box {
     max-width: none;
-}
+  }
+
+  .footer-social-links-section::before {
+    width: 30%;
+  }
+
+  .footer-social-links-section::after {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .hero-text {
-        font-size: 1.5rem;
-        padding: 1.3rem 1rem;
+  .hero-text {
+    font-size: 1.5rem;
+    padding: 1.3rem 1rem;
   }
 
   .work-experience-box {
     padding: 1.5rem;
   }
-  
+
+  .footer-social-links-section::before {
+    border-top: unset;
+    position: static;
+    width: 0%;
+  }
+
+  .footer-social-links-section::after {
+    border-top: unset;
+    position: static;
+    width: 0%;
+  }
+
+  .footer-container {
+    border-top: 1px solid #7691ad;
+    padding-top: 1rem;
+  }
 }

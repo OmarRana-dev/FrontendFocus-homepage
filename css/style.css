@@ -10,6 +10,7 @@
 }
 
 object {
+  /* background-color: #ff4f5a; */
   width: 40px;
   height: 40px;
 }
@@ -189,9 +190,9 @@ header {
   gap: 3rem 0;
   text-align: center;
   max-width: 1000px;
+  margin: 0 1rem;
   border-top: 1px solid #dad9d9;
   padding-top: 4rem;
-  border-bottom: 4px solid #ff4f5a;
 }
 
 .work-experience-boxs-container {
@@ -241,8 +242,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  left: 0;  
-
+  left: 0;
 }
 
 /* hire me section */
@@ -263,37 +263,66 @@ footer {
   justify-content: center;
   padding-top: 2rem;
   color: #dad9d9;
+  padding-bottom: 10px;
 }
 
 .footer-container {
-  border-top: 1px solid #dad9d9;
+  margin: 0 1rem;
   max-width: 1000px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 .3rem;
+  align-items: center;
 }
 
-.social-links-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem 0 1rem 0;
+.footer-social-links-section {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 1rem;
+  position: relative;
 }
 
-.social-links-section > ul {
+.footer-social-links-section::before {
+  border-top: 1px solid #7691ad;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40%;
+}
+
+.footer-social-links-section::after {
+  border-top: 1px solid #7691ad;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 40%;
+}
+
+.footer-social-links-section > ul.social-links-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-.copyright-section {
+.footer-botom-section {
+  margin-top: 1rem;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
+  flex-direction: column;
+  align-items: center;
 }
 
-.copyright-section > ul {
+.footer-botom-section > ul {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+}
+
+.content-links-in-footer {
+  color: #dad9d9;
 }
 
 /* button style */
@@ -307,10 +336,10 @@ button {
   cursor: pointer;
   border: 1px solid transparent;
   margin-top: 1rem;
-  transition: all ease-in 200ms;
+  /* transition: all ease-in 200ms; */
 }
 
-button:hover {
+button:active {
   color: #ff4f5a;
   border-color: #ff4f5a;
   background-color: transparent;
